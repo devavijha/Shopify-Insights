@@ -75,7 +75,7 @@ GET /api/ai-analysis?website_url=https://example-store.com
 - **Data Reliability Assessment**
 - **Analytical Confidence Scoring**
 
-## 🏗️ Technical Architecture
+##  Technical Architecture
 
 ### **Technology Stack**
 ```yaml
@@ -105,7 +105,7 @@ API Design: RESTful architecture with OpenAPI documentation
 └─────────────────┘    └─────────────────┘    └─────────────────┘
 ```
 
-## 🚀 Quick Start Guide
+## Quick Start Guide
 
 ### **Prerequisites**
 - Python 3.9+
@@ -152,7 +152,7 @@ Once running, access interactive API docs at:
 - **Swagger UI**: http://localhost:8000/docs
 - **ReDoc**: http://localhost:8000/redoc
 
-## 💡 Usage Examples
+## Usage Examples
 
 ### **Basic Store Analysis**
 ```bash
@@ -286,7 +286,7 @@ curl http://localhost:8000/health/database
 curl http://localhost:8000/health/ai-services
 ```
 
-## 🔒 Security & Compliance
+## Security & Compliance
 
 ### **Security Features**
 - Input validation and sanitization
