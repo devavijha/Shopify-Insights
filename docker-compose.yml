@@ -1,0 +1,56 @@
+# ShopifyScope Intelligence Platform Docker Configuration
+# Advanced E-commerce Analytics with AI-Driven Business Intelligence
+
+version: '3.8'
+
+services:
+  shopifyscope-app:
+    build: .
+    container_name: shopifyscope-intelligence-api
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: mysql+mysqlconnector://intelligence_user:secure_intelligence_pass@shopifyscope-db:3306/shopifyscope_intelligence_db
+      ENVIRONMENT: production
+      AI_ANALYSIS_ENABLED: "true"
+      CACHE_TTL_SECONDS: "3600"
+      LOG_LEVEL: INFO
+    depends_on:
+      shopifyscope-db:
+        condition: service_healthy
+    volumes:
+      - .:/app
+    command: ["python3", "main.py"]
+    restart: unless-stopped
+    networks:
+      - shopifyscope-network
+
+  shopifyscope-db:
+    image: mysql:8.0
+    container_name: shopifyscope-intelligence-db
+    ports:
+      - "3307:3306"  # Changed to avoid conflicts with local MySQL
+    environment:
+      MYSQL_ROOT_PASSWORD: shopifyscope_root_secure_2025
+      MYSQL_DATABASE: shopifyscope_intelligence_db
+      MYSQL_USER: intelligence_user
+      MYSQL_PASSWORD: secure_intelligence_pass
+    volumes:
+      - shopifyscope_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost -u${MYSQL_USER} -p${MYSQL_PASSWORD} || exit 1"]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    restart: unless-stopped
+    networks:
+      - shopifyscope-network
+
+volumes:
+  shopifyscope_data:
+    driver: local
+
+networks:
+  shopifyscope-network:
+    driver: bridge
