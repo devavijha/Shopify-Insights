@@ -2,41 +2,41 @@
 
 -----
 
-# 🛍️ ShopifyScope Intelligence Platform
+#  ShopifyScope Intelligence Platform
 
 **Advanced E-commerce Analytics with AI-Driven Business Intelligence**
 
-## 🌟 Project Vision
+##  Project Vision
 
 ShopifyScope is a comprehensive e-commerce intelligence platform that transforms raw Shopify store data into actionable business insights. Built with modern AI/ML technologies, it serves as a powerful tool for market research, competitive analysis, and strategic planning.
 
-### 🎯 Core Value Proposition:
+###  Core Value Proposition:
 
-- **📈 Data-Driven Decisions**: Convert web data into strategic business intelligence
-- **🔍 Market Research**: Deep dive into e-commerce trends and competitor landscapes
-- **� Intelligent Automation**: AI-powered content analysis and recommendation engine
-- **� Strategic Planning**: Actionable insights for business growth and optimization
+- **Data-Driven Decisions**: Convert web data into strategic business intelligence
+- ** Market Research**: Deep dive into e-commerce trends and competitor landscapes
+- **Intelligent Automation**: AI-powered content analysis and recommendation engine
+- **Strategic Planning**: Actionable insights for business growth and optimization
 
-## ✨ Platform Capabilities
+##  Platform Capabilities
 
-### � **Core Analytics Suite**
-- ✅ **Comprehensive Product Intelligence**
-- ✅ **Strategic Product Positioning Analysis** 
-- ✅ **Business Policy Intelligence** (Privacy, Returns, Shipping)
-- ✅ **Customer Support Analysis** (FAQ patterns)
-- ✅ **Digital Presence Mapping** (Social channels)
-- ✅ **Communication Channel Discovery**
-- ✅ **Brand Narrative Extraction**
-- ✅ **Navigation Structure Analysis**
-- ✅ **RESTful API Architecture** with comprehensive error handling
-- ✅ **Enterprise-Grade Error Management** (400, 404, 500)
+###  **Core Analytics Suite**
+- **Comprehensive Product Intelligence**
+- **Strategic Product Positioning Analysis** 
+- **Business Policy Intelligence** (Privacy, Returns, Shipping)
+- **Customer Support Analysis** (FAQ patterns)
+- **Digital Presence Mapping** (Social channels)
+- **Communication Channel Discovery**
+- **Brand Narrative Extraction**
+- **Navigation Structure Analysis**
+- **RESTful API Architecture** with comprehensive error handling
+- **Enterprise-Grade Error Management** (400, 404, 500)
 
-### 🚀 **Advanced Features**
-- ✅ **Persistent Data Layer** (MySQL integration)
-- ✅ **Performance Optimization** with intelligent caching 
-- ✅ **Market Intelligence Framework**
+###  **Advanced Features**
+-  **Persistent Data Layer** (MySQL integration)
+-  **Performance Optimization** with intelligent caching 
+- **Market Intelligence Framework**
 
-### 🤖 **AI-Powered Business Intelligence**
+###  **AI-Powered Business Intelligence**
 
 #### 1. **Sentiment & Brand Analysis** 
 ```http
@@ -171,7 +171,7 @@ curl "http://localhost:8000/api/marketing-insights?website_url=https://example-s
 curl "http://localhost:8000/api/pricing-intelligence?website_url=https://example-store.myshopify.com"
 ```
 
-## 🔧 Configuration
+## Configuration
 
 ### **Environment Variables**
 ```bash
@@ -192,7 +192,7 @@ API_RATE_LIMIT=100
 DEBUG_MODE=false
 ```
 
-## 🧪 Testing & Quality Assurance
+## Testing & Quality Assurance
 
 ### **Running Tests**
 ```bash
@@ -223,7 +223,7 @@ pylint src/
 mypy .
 ```
 
-## 🤝 Contributing
+## Contributing
 
 ### **Development Workflow**
 1. Fork the repository
@@ -250,7 +250,7 @@ ShopifyScope-Intelligence/
 └── main.py              # Application entry point
 ```
 
-## 📈 Performance & Scalability
+## Performance & Scalability
 
 ### **Optimization Features**
 - **Intelligent Caching**: Redis-backed response caching
@@ -265,7 +265,7 @@ ShopifyScope-Intelligence/
 - **Microservices Ready**: Modular architecture
 - **Cloud Deployment**: Docker container compatibility
 
-## 📊 Monitoring & Analytics
+##  Monitoring & Analytics
 
 ### **Built-in Metrics**
 - API response times and success rates
@@ -301,7 +301,7 @@ curl http://localhost:8000/health/ai-services
 - GDPR compliance ready
 - Data retention policies
 
-## 🌟 Advanced Features
+## Advanced Features
 
 ### **Custom AI Models**
 The platform supports custom AI model integration:
@@ -336,11 +336,11 @@ Extend functionality with custom plugins:
 - Feature requests welcome
 - Contributions encouraged
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - FastAPI team for the excellent web framework
 - Beautiful Soup contributors for web scraping capabilities
